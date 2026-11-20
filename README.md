@@ -10,7 +10,7 @@ Proyecto de Visual Studio con formularios para clientes, búsqueda, edición y v
 
 Abrir la solución `.sln` en Visual Studio con las herramientas de desarrollo de escritorio .NET. Restaurar las dependencias declaradas y revisar las rutas de archivos y configuración de persistencia antes de iniciar. Se excluyeron los datos de clientes y archivos operativos.
 
-Los usuarios y la contraseña de demostración de `Login.cs` se sustituyeron por ejemplos. Su lógica de autenticación es académica y debe revisarse antes de utilizar datos reales.
+El acceso de demostración exige usuario y contraseña del entorno; no incluye cuentas predeterminadas. La aplicación conserva limitaciones académicas y requiere revisión antes de usar datos reales.
 
 ## Estado del respaldo
 
@@ -23,3 +23,8 @@ Proyecto recuperado de archivos académicos del propietario de la cuenta. La des
 Definir `VENTAS_DEMO_USER` y `VENTAS_DEMO_PASSWORD` en el entorno. Se exige que usuario y contraseña coincidan juntos. Si falta la configuración o la contraseña tiene menos de 12 caracteres, el acceso se rechaza. No se incluyen credenciales predeterminadas.
 
 Esto sigue siendo una aplicación académica de escritorio, no un sistema de identidad seguro para producción. Los archivos locales y la autorización de operaciones necesitan una revisión independiente antes de trabajar con datos reales. El original del PC se conservó.
+
+
+## Publicación y configuración
+
+Código compartido para portafolio profesional. No incluye credenciales del negocio. Preparación de seguridad del 20 de noviembre de 2026; no equivale a una validación de producción.

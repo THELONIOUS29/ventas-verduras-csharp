@@ -24,3 +24,21 @@ venv/
 *.pfx
 *.p12
 *.keystore
+
+# Configuración privada: nunca versionar
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+**/*.local.json
+**/*.local.js
+**/google-services.json
+**/GoogleService-Info.plist
+**/key.properties
+**/*service-account*.json
+**/*service_account*.json
+*.jks
+*.keystore
+*.p12
+*.pfx
