@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutenticacionLocal.cs" />
     <Compile Include="Archivos.cs" />
     <Compile Include="Buscar.cs">
       <SubType>Form</SubType>

@@ -17,3 +17,9 @@ Los usuarios y la contraseña de demostración de `Login.cs` se sustituyeron por
 Copia para portafolio preparada el 20 de noviembre de 2026. Se conservaron los archivos originales en el PC. Se excluyeron el historial Git, credenciales, configuraciones del IDE, dependencias instaladas y datos operativos. Se quitaron las salidas guardadas de notebooks y los bloques INSERT/COPY de SQL. Se requiere configurar y validar el entorno antes de ejecutar; no se ejecutó la aplicación ni se verificaron sus resultados durante este respaldo.
 
 Proyecto recuperado de archivos académicos del propietario de la cuenta. La descripción no acredita autoría exclusiva; al presentarlo deben indicarse las contribuciones personales y grupales. No se añade una licencia nueva.
+
+## Acceso de demostración después de la revisión de seguridad
+
+Definir `VENTAS_DEMO_USER` y `VENTAS_DEMO_PASSWORD` en el entorno. Se exige que usuario y contraseña coincidan juntos. Si falta la configuración o la contraseña tiene menos de 12 caracteres, el acceso se rechaza. No se incluyen credenciales predeterminadas.
+
+Esto sigue siendo una aplicación académica de escritorio, no un sistema de identidad seguro para producción. Los archivos locales y la autorización de operaciones necesitan una revisión independiente antes de trabajar con datos reales. El original del PC se conservó.

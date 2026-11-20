@@ -8,14 +8,8 @@ namespace WinAppDiseños
     public partial class Login : Form
     {
         private SoundPlayer soundPlayer;
-        String usuario4 = "usuario_demo_4";
-        String usuario1 = "usuario_demo_1";
-        String usuario2 = "usuario_demo_2";
-        String usuario3 = "usuario_demo_3";
-        String usuario5 = "usuario_demo_5";
-        String usuario6 = "usuario_demo_6";
-        String usuario7 = "usuario_demo_7";
-        string contra = "CONFIGURAR_CLAVE_DEMO_LOCALMENTE";
+        private readonly string usuarioConfigurado = Environment.GetEnvironmentVariable("VENTAS_DEMO_USER") ?? String.Empty;
+        private readonly string claveConfigurada = Environment.GetEnvironmentVariable("VENTAS_DEMO_PASSWORD") ?? String.Empty;
 
         public Login()
         {
@@ -132,7 +126,7 @@ namespace WinAppDiseños
         {
             try
             {
-                if (textBox1.Text == usuario1 || textBox1.Text == usuario2 || textBox1.Text == usuario3 || textBox1.Text == usuario4 || textBox1.Text == usuario5 || textBox1.Text == usuario6 || textBox1.Text == usuario7 || textBox2.Text == contra)
+                if (AutenticacionLocal.Validar(textBox1.Text, textBox2.Text, usuarioConfigurado, claveConfigurada))
                 {
                     Pagina_principal objetopin = new Pagina_principal();
 
@@ -168,10 +162,7 @@ namespace WinAppDiseños
 
         private void Login_Load(object sender, EventArgs e)
         { 
-            /*
-            // bypass para no estar ingresando usuario y contrasenia durante las pruebas
-            Pagina_principal objetopin = new Pagina_principal();
-            objetopin.ShowDialog();*/
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
